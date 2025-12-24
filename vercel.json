@@ -1,24 +1,12 @@
 {
-  "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/Me Ry Chit Mot/index ver1.2.html"
+      "source": "/",
+      "destination": "/Me Ry Chit Mot/index.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "/Me Ry Chit Mot/$1"
-    }
-  ],
-  "headers": [
-    {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
+      "destination": "/Me Ry Chit Mot/$1"
     }
   ]
 }
